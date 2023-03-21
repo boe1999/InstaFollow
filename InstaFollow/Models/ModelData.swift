@@ -9,6 +9,8 @@ import Foundation
 
 //var followers: [Follower] = load("whiteList.json")
 
+//function that permit to fetch data from a JSON
+
 func load<T: Decodable>(_ filename: String) -> T {
     let data: Data
 

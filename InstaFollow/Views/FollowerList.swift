@@ -5,13 +5,18 @@
 //  Created by Daniele Boerio on 14/03/23.
 //
 
+//view of the list of unfollowers
+
 import SwiftUI
 
 struct FollowerList: View {
     @Binding var unFollowers : String
     var body: some View {
         NavigationView{
-            let followers: [Follower] = inizializzaLista(array: trattaArray(string: unFollowers))
+            
+            //setup the unfollower list using function
+            let followers: [Follower] = initializeList(array: treatArray(idk: unFollowers))
+            //show text if no unfollowers in the list
             if(followers.count == 0){
                 Text("[Nessun] Unfollower trovato")
             }else{
@@ -23,13 +28,16 @@ struct FollowerList: View {
     }
 }
 
-func trattaArray(string: String) -> [String]{
-    var myString = string
+func treatArray(idk: String) -> [String]{
+    var myString = idk
     var finalArray : [String] = []
+    //drop first and last char becouse i have parantesies []
     myString = String(myString.dropLast())
     myString = String(myString.dropFirst())
-    let stringList = myString.split(separator: ",")
-    stringList.forEach { word in
+    //split the list
+    let splittedList = myString.split(separator: ",")
+    //for each word in the list drop first and last chat becouse i have ""
+    splittedList.forEach { word in
         var parola : String
         parola = String(word.dropLast())
         parola = String(parola.dropFirst())
@@ -38,11 +46,12 @@ func trattaArray(string: String) -> [String]{
     return finalArray
 }
 
-func inizializzaLista(array : [String]) -> [Follower]{
+//initialize a list aving an Array of Strings
+func initializeList(array : [String]) -> [Follower]{
     var index : Int = 0
     var followers : [Follower] = []
     array.forEach { stringa in
-        let follow = Follower(id: index, username: stringa, url: "")
+        let follow = Follower(id: index, username: stringa)
         followers.append(follow)
         index+=1
     }

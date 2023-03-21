@@ -5,6 +5,8 @@
 //  Created by Daniele Boerio on 14/03/23.
 //
 
+//view of a single Rows
+
 import SwiftUI
 
 struct FollowerRow: View {

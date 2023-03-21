@@ -7,6 +7,8 @@
 
 import SwiftUI
 
+//definition of the App logo
+
 struct InstaLogoView: View {
     var body: some View {
         Image("instaLogo")

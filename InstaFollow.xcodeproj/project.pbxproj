@@ -11,14 +11,28 @@
 		D003E6A829C0809B003F29E0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D003E6A729C0809B003F29E0 /* ContentView.swift */; };
 		D003E6AA29C0809C003F29E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D003E6A929C0809C003F29E0 /* Assets.xcassets */; };
 		D003E6AD29C0809C003F29E0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D003E6AC29C0809C003F29E0 /* Preview Assets.xcassets */; };
+		D003E6BA29C08954003F29E0 /* InstaLogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D003E6B929C08954003F29E0 /* InstaLogoView.swift */; };
+		D003E6BC29C08E82003F29E0 /* Follower.swift in Sources */ = {isa = PBXBuildFile; fileRef = D003E6BB29C08E82003F29E0 /* Follower.swift */; };
+		D003E6BE29C08F3D003F29E0 /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D003E6BD29C08F3D003F29E0 /* ModelData.swift */; };
+		D003E6C329C09529003F29E0 /* FollowerRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = D003E6C229C09529003F29E0 /* FollowerRow.swift */; };
+		D003E6C829C09A12003F29E0 /* FollowerList.swift in Sources */ = {isa = PBXBuildFile; fileRef = D003E6C729C09A12003F29E0 /* FollowerList.swift */; };
+		D003E6CA29C09C2A003F29E0 /* whiteList.json in Resources */ = {isa = PBXBuildFile; fileRef = D003E6C929C09C2A003F29E0 /* whiteList.json */; };
+		D003E6D229C0E305003F29E0 /* instaLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = D003E6D129C0E305003F29E0 /* instaLogo.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D003E6A229C0809B003F29E0 /* InstaFollow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstaFollow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D003E6A529C0809B003F29E0 /* InstaFollowApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstaFollowApp.swift; sourceTree = "<group>"; };
-		D003E6A729C0809B003F29E0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D003E6A729C0809B003F29E0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = ContentView.swift; sourceTree = "<group>"; };
 		D003E6A929C0809C003F29E0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D003E6AC29C0809C003F29E0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D003E6B929C08954003F29E0 /* InstaLogoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstaLogoView.swift; sourceTree = "<group>"; };
+		D003E6BB29C08E82003F29E0 /* Follower.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Follower.swift; sourceTree = "<group>"; };
+		D003E6BD29C08F3D003F29E0 /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
+		D003E6C229C09529003F29E0 /* FollowerRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowerRow.swift; sourceTree = "<group>"; };
+		D003E6C729C09A12003F29E0 /* FollowerList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowerList.swift; sourceTree = "<group>"; };
+		D003E6C929C09C2A003F29E0 /* whiteList.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = whiteList.json; path = ../../../whiteList.json; sourceTree = "<group>"; };
+		D003E6D129C0E305003F29E0 /* instaLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = instaLogo.png; path = ../../../instaLogo.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +66,10 @@
 			isa = PBXGroup;
 			children = (
 				D003E6A529C0809B003F29E0 /* InstaFollowApp.swift */,
-				D003E6A729C0809B003F29E0 /* ContentView.swift */,
+				D003E6C029C08FC7003F29E0 /* Models */,
+				D003E6BF29C08FBA003F29E0 /* Views */,
+				D003E6C429C0981C003F29E0 /* Resources */,
+				D003E6B529C087E6003F29E0 /* Images */,
 				D003E6A929C0809C003F29E0 /* Assets.xcassets */,
 				D003E6AB29C0809C003F29E0 /* Preview Content */,
 			);
@@ -65,6 +82,42 @@
 				D003E6AC29C0809C003F29E0 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D003E6B529C087E6003F29E0 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				D003E6D129C0E305003F29E0 /* instaLogo.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		D003E6BF29C08FBA003F29E0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D003E6B929C08954003F29E0 /* InstaLogoView.swift */,
+				D003E6A729C0809B003F29E0 /* ContentView.swift */,
+				D003E6C229C09529003F29E0 /* FollowerRow.swift */,
+				D003E6C729C09A12003F29E0 /* FollowerList.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D003E6C029C08FC7003F29E0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D003E6BD29C08F3D003F29E0 /* ModelData.swift */,
+				D003E6BB29C08E82003F29E0 /* Follower.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D003E6C429C0981C003F29E0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D003E6C929C09C2A003F29E0 /* whiteList.json */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +136,8 @@
 			dependencies = (
 			);
 			name = InstaFollow;
+			packageProductDependencies = (
+			);
 			productName = InstaFollow;
 			productReference = D003E6A229C0809B003F29E0 /* InstaFollow.app */;
 			productType = "com.apple.product-type.application";
@@ -94,6 +149,9 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
+				KnownAssetTags = (
+					New,
+				);
 				LastSwiftUpdateCheck = 1420;
 				LastUpgradeCheck = 1420;
 				TargetAttributes = {
@@ -111,6 +169,8 @@
 				Base,
 			);
 			mainGroup = D003E69929C0809B003F29E0;
+			packageReferences = (
+			);
 			productRefGroup = D003E6A329C0809B003F29E0 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -125,7 +185,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D003E6D229C0E305003F29E0 /* instaLogo.png in Resources */,
 				D003E6AD29C0809C003F29E0 /* Preview Assets.xcassets in Resources */,
+				D003E6CA29C09C2A003F29E0 /* whiteList.json in Resources */,
 				D003E6AA29C0809C003F29E0 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,8 +199,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D003E6C329C09529003F29E0 /* FollowerRow.swift in Sources */,
+				D003E6BA29C08954003F29E0 /* InstaLogoView.swift in Sources */,
 				D003E6A829C0809B003F29E0 /* ContentView.swift in Sources */,
+				D003E6BE29C08F3D003F29E0 /* ModelData.swift in Sources */,
 				D003E6A629C0809B003F29E0 /* InstaFollowApp.swift in Sources */,
+				D003E6C829C09A12003F29E0 /* FollowerList.swift in Sources */,
+				D003E6BC29C08E82003F29E0 /* Follower.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,11 +331,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_ENTITLEMENTS = InstaFollow/InstaFollow.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"InstaFollow/Preview Content\"";
+				DEVELOPMENT_TEAM = 64TGDV5BT4;
+				ENABLE_HARDENED_RUNTIME = NO;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -281,9 +354,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = boe.InstaFollow;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -292,11 +369,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_ENTITLEMENTS = InstaFollow/InstaFollow.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"InstaFollow/Preview Content\"";
+				DEVELOPMENT_TEAM = 64TGDV5BT4;
+				ENABLE_HARDENED_RUNTIME = NO;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -309,9 +392,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = boe.InstaFollow;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
